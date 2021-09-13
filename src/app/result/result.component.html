@@ -1,0 +1,12 @@
+<h2 class="title">Аэрофлот</h2>
+<ul class="list">
+  <li class="list__item" *ngFor="let itemAeroflot of itemsAeroflot">
+    <p class="list__paragraph">{{ itemAeroflot.purchase }}: {{ itemAeroflot.price }}</p>
+  </li>
+</ul>
+<h2 class="title">РЖД</h2>
+<ul class="list">
+  <li class="list__item" *ngFor="let itemTrain of itemsTrain">
+    <p class="list__paragraph">{{ itemTrain.purchase }}: {{ itemTrain.price }}</p>
+  </li>
+</ul>

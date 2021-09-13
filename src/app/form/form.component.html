@@ -1,0 +1,15 @@
+<div class="form">
+  <label class="form__label" for="rangeInput">Расстояние:</label>
+  <input [(ngModel)]="range" class="form__input" placeholder="КМ" type="number" id="rangeInput" required min="1">
+  <label class="form__label" for="ageInput">Ваш возраст:</label>
+  <input [(ngModel)]="age" class="form__input" placeholder="Полных лет" type="number" id="ageInput" required min="1">
+  <label class="form__label" for="widthInput">Вес багажа:</label>
+  <input [(ngModel)]="width" class="form__input" placeholder="КГ" type="number" id="widthInput" required min="1">
+  <button class="form__button" (click)="addItem(range, age, width)">Рассчитать</button>
+  <p class="form__error">{{ error }}</p>
+</div>
+<app-result
+  [itemsAeroflot] = 'itemsAeroflot'
+  [itemsTrain] = 'itemsTrain'
+>
+</app-result>
